@@ -2,13 +2,21 @@
 
 Use Node packages not bundled into Postman's sandbox.
 
-## Setup
+## Setup on local machine
 
 Clone this repo.
 
 `npm i`
 
 `node index.js`
+
+## Setup in Postman
+
+If you want to jump right into it, import this prebuilt collection and create a global variable called `require` with value `uniq,slapdash,pad-left`:
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/d76d17db442b465cfe3f)
+
+Read on for getting this working with your own existing collection..
 
 Add the following script to the `Pre-Request Script` of your collection:
 
