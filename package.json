@@ -1,0 +1,12 @@
+{
+  "description": "Import node packages inside Postman.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt-ball/postman-external-require.git"
+  },
+  "dependencies": {
+    "browserify": "^16.3.0",
+    "express": "^4.17.1"
+  }
+}
