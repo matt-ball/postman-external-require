@@ -32,9 +32,11 @@ if (pkgs && (reqs === installed)) {
         url: `localhost:3000?packages=${reqs}`,
         method: 'GET'
     }, (err, res) => {
-        eval(res.text());
-        pm.globals.set('installedPackages', reqs);
-        pm.globals.set('packages', res.text());
+        if (!err) {
+            eval(res.text());
+            pm.globals.set('installedPackages', reqs);
+            pm.globals.set('packages', res.text());
+        }
     });
 }
 ```
