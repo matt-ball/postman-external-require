@@ -2,7 +2,7 @@
 
 Use Node packages not bundled into Postman's sandbox.
 
-## Setup on local machine
+## 1. Setup on local machine
 
 Clone this repo.
 
@@ -10,7 +10,7 @@ Clone this repo.
 
 `node index.js`
 
-## Setup in Postman
+## 2. Setup in Postman
 
 If you want to jump right into it, import this prebuilt collection and create a global variable called `require` with value `uniq,slapdash,pad-left`:
 
